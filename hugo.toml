@@ -1,20 +1,25 @@
 baseURL = 'https://caixy.xin'
 title = 'VC分享'
-theme = 'PaperMod'
+theme = 'blowfish'
 
 [params]
   description = 'VC的技术分享博客'
-  ShowReadingTime = true
-  ShowDate = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButton = true
+  mainSections = ['posts']
 
-[params.homeInfoParams]
-  Title = "欢迎来到 VC 分享"
-  Content = "这里是 VC 的技术分享博客，记录开发实践、项目经验与技术思考。"
+[params.author]
+  name = 'VC'
+
+[params.blowfish]
+  theme = 'rose'
+  appearance = 'dark'
+  layout = 'compact'
+
+[params.blowfish.hero]
+  title = "VC 分享"
+  subtitle = "记录开发实践、项目经验与技术思考"
+
+[params.blowfish.social]
+  github = "caixy-plus"
 
 [taxonomies]
   tag = "tags"
