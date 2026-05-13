@@ -9,6 +9,8 @@ description: "基于 Flutter 构建的跨平台端口管理工具，支持 macOS
 
 PortProcess 是一款基于 Flutter 构建的跨平台端口管理工具，支持 macOS、Windows 和 Linux。
 
+![PortProcess 截图](/images/portprocess-screenshot.png)
+
 ## 功能特性
 
 - **实时进程监控** - 自动列出所有绑定端口的本地进程

@@ -9,6 +9,8 @@ description: "集成 KataGo 的全栈围棋教学应用，包含 Spring Boot 服
 
 iKindle 是一个围棋智能教学平台，集成 KataGo AI 引擎，提供实时对弈、AI 分析、复盘教学等功能。
 
+![iKindle 截图](/images/ikindle-screenshot.png)
+
 ## 技术架构
 
 | 组件 | 技术栈 |
