@@ -5,6 +5,8 @@ draft: false
 description: "微秒级精度节拍器，一套代码覆盖 iOS/Android/macOS/Windows/Web 五端，零漂移计时"
 ---
 
+**项目地址**: [https://github.com/caixy-plus/metronome](https://github.com/caixy-plus/metronome)
+
 **微秒级精度节拍器 | 一套代码 · 五端覆盖 | 零漂移计时**
 
 ## 功能预览

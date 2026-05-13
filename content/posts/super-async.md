@@ -5,6 +5,8 @@ draft: false
 description: "高吞吐、低延迟、可水平扩展的分布式任务调度与执行框架，基于 PostgreSQL + Spring Boot"
 ---
 
+**项目地址**: [https://github.com/caixy-plus/super-async](https://github.com/caixy-plus/super-async)
+
 > 通用异步任务调度平台 —— 高吞吐、低延迟、可水平扩展的分布式任务调度与执行框架。
 
 ## 项目介绍

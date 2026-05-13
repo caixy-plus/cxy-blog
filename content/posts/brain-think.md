@@ -5,6 +5,8 @@ draft: false
 description: "基于 OAuth + 脑池 AI API 的端到端验证应用，包含 Spring Boot 服务端和 Flutter 客户端"
 ---
 
+**项目地址**: [https://github.com/caixy-plus/brain-think](https://github.com/caixy-plus/brain-think)
+
 `app_plat` OAuth + 脑池 AI API 的端到端验证应用。
 
 | 子项目 | 说明 |

@@ -5,6 +5,8 @@ draft: false
 description: "面向围棋爱好者的智能教学应用，集成 KataGo AI 引擎与大模型自然语言教学"
 ---
 
+**项目地址**: [https://github.com/caixy-plus/ai-gobang](https://github.com/caixy-plus/ai-gobang)
+
 AI 指导棋是一款面向围棋爱好者的智能教学应用。核心体验是：**用户与 AI 对弈或自战解说时，获得像人类高段棋手一样的实时指导、赛后复盘和互动问答**。
 
 ## 技术亮点

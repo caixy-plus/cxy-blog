@@ -5,6 +5,8 @@ draft: false
 description: "集成 KataGo 的全栈围棋教学应用，包含 Spring Boot 服务端、Flutter 客户端和管理后台"
 ---
 
+**项目地址**: [https://github.com/caixy-plus/ikindle](https://github.com/caixy-plus/ikindle)
+
 iKindle 是一个围棋智能教学平台，集成 KataGo AI 引擎，提供实时对弈、AI 分析、复盘教学等功能。
 
 ## 技术架构
