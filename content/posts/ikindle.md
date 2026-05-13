@@ -9,6 +9,8 @@ description: "全栈电子书阅读平台，支持多端阅读、书架管理、
 
 iKindle 是一个功能完整的电子书阅读平台，支持电子书管理、多端阅读、书架管理、订单支付与数据同步。
 
+![iKindle 截图](/images/ikindle-screenshot.png)
+
 ## 技术架构
 
 | 组件 | 技术栈 |
