@@ -1,0 +1,21 @@
+baseURL = 'https://caixy.xin'
+title = 'VC分享'
+theme = 'PaperMod'
+
+[params]
+  description = 'VC的技术分享博客'
+  ShowReadingTime = true
+  ShowDate = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButton = true
+
+[params.homeInfoParams]
+  Title = "欢迎来到 VC 分享"
+  Content = "这里是 VC 的技术分享博客，记录开发实践、项目经验与技术思考。"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
