@@ -9,18 +9,14 @@ description: "VC 的技术分享博客首页"
 
 这里是 VC 的技术分享博客，记录开发实践、项目经验与技术思考。
 
-## 关于我
-
-热衷于 Flutter、Spring Boot、分布式系统、AI 工具链等技术领域，喜欢探索新技术并分享实践经验。
-
 ## 项目作品
 
-- **App Platform All** — 全栈应用平台元仓库，AI 编程协作工作区
+- **AI 指导棋 (ai-gobang)** — 围棋 AI 指导棋应用（Spring Boot + Flutter + KataGo）
 - **Brain Think** — OAuth + AI API 端到端验证应用（Spring Boot + Flutter）
-- **Claude Code Best V5 (CCB)** — Claude Code 开源复现项目
+- **iKindle** — 围棋智能教学平台（Spring Boot + Flutter + KataGo）
 - **Extreme Metronome** — 微秒级精度全平台节拍器（Flutter 五端覆盖）
+- **PortProcess** — 跨平台端口管理工具（Flutter）
 - **SuperAsync** — 通用异步任务调度平台（Java/Spring Boot）
-- **WaveGrid** — 更多项目持续更新中...
 
 ## 技术栈
 
