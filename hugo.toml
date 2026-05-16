@@ -8,22 +8,20 @@ theme = 'blowfish'
 
 [params.author]
   name = 'VC'
+  headline = 'Flutter / Spring Boot / AI 工具链'
 
-[params.blowfish]
-  theme = 'rose'
-  appearance = 'dark'
-  layout = 'compact'
+[[params.author.links]]
+  github = 'https://github.com/caixy-plus'
 
-[params.blowfish.homepage]
-  layout = 'page'
-
-[params.blowfish.hero]
-  title = "VC 分享"
-  subtitle = "记录开发实践、项目经验与技术思考"
-
-[params.blowfish.social]
-  github = "caixy-plus"
+[params.homepage]
+  layout = 'hero'
+  homepageImage = '/images/hero-bg.svg'
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
+  showMoreLinkDest = '/posts'
+  cardView = true
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  tag = 'tags'
+  category = 'categories'
