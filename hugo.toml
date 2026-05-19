@@ -1,9 +1,9 @@
 baseURL = 'https://caixy.xin'
-title = 'VC分享'
+title = '代码随手记'
 theme = 'blowfish'
 
 [params]
-  description = 'VC的技术分享博客'
+  description = '随手记录代码与技术'
   mainSections = ['posts']
 
 [params.author]
