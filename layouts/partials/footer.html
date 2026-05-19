@@ -33,31 +33,29 @@
       </nav>
     {{ end }}
   {{ end }}
-  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-    <div>
-      {{/* Copyright */}}
-      {{ if .Site.Params.footer.showCopyright | default true }}
-        <p class="text-sm text-neutral-500 dark:text-neutral-400">
-          {{- with replace .Site.Params.copyright "{ year }" now.Year }}
-            {{ . | markdownify }}
-          {{- else }}
-            &copy;
-            {{ now.Format "2006" }}
-            {{ .Site.Params.Author.name | markdownify }}
-          {{- end }}
-        </p>
-      {{ end }}
-      {{/* ICP 备案 */}}
+  <div class="flex flex-col items-center justify-center gap-1 text-center">
+    {{/* Copyright */}}
+    {{ if .Site.Params.footer.showCopyright | default true }}
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
-        <a
-          class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="https://beian.miit.gov.cn/"
-          target="_blank"
-          rel="noopener noreferrer">
-          闽ICP备2026017130号-1
-        </a>
+        {{- with replace .Site.Params.copyright "{ year }" now.Year }}
+          {{ . | markdownify }}
+        {{- else }}
+          &copy;
+          {{ now.Format "2006" }}
+          {{ .Site.Params.Author.name | markdownify }}
+        {{- end }}
       </p>
-    </div>
+    {{ end }}
+    {{/* ICP 备案 */}}
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      <a
+        class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://beian.miit.gov.cn/"
+        target="_blank"
+        rel="noopener noreferrer">
+        闽ICP备2026017130号-1
+      </a>
+    </p>
 
     {{/* Theme attribution */}}
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
