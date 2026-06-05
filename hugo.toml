@@ -6,6 +6,9 @@ theme = 'blowfish'
   description = '随手记录代码与技术'
   mainSections = ['posts']
 
+[params.article]
+  showComments = true
+
 [params.author]
   name = 'VC'
   headline = 'Flutter / Spring Boot / AI 工具链'

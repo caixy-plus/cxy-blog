@@ -1,0 +1,46 @@
+{{/*
+  giscus 评论(基于 GitHub Discussions)
+  仓库: caixy-plus/cxy-blog · 分类: Announcements
+  主题与 Blowfish 明暗模式联动(监听 <html> 的 dark class)
+*/}}
+<script>
+  (function () {
+    function giscusTheme() {
+      return document.documentElement.classList.contains("dark")
+        ? "dark"
+        : "light";
+    }
+
+    // 注入 giscus 脚本
+    var s = document.createElement("script");
+    s.src = "https://giscus.app/client.js";
+    s.async = true;
+    s.crossOrigin = "anonymous";
+    s.setAttribute("data-repo", "caixy-plus/cxy-blog");
+    s.setAttribute("data-repo-id", "R_kgDOScAwvA");
+    s.setAttribute("data-category", "Announcements");
+    s.setAttribute("data-category-id", "DIC_kwDOScAwvM4C-iYk");
+    s.setAttribute("data-mapping", "pathname");
+    s.setAttribute("data-strict", "0");
+    s.setAttribute("data-reactions-enabled", "1");
+    s.setAttribute("data-emit-metadata", "0");
+    s.setAttribute("data-input-position", "bottom");
+    s.setAttribute("data-theme", giscusTheme());
+    s.setAttribute("data-lang", "zh-CN");
+    s.setAttribute("data-loading", "lazy");
+    document.currentScript.parentNode.appendChild(s);
+
+    // 切换明暗模式时同步 giscus 主题
+    new MutationObserver(function () {
+      var iframe = document.querySelector("iframe.giscus-frame");
+      if (!iframe) return;
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: giscusTheme() } } },
+        "https://giscus.app"
+      );
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  })();
+</script>
