@@ -1,6 +1,7 @@
 baseURL = 'https://caixy.xin'
 title = '代码随手记'
 theme = 'blowfish'
+defaultContentLanguage = 'zh-cn'
 
 [params]
   description = '随手记录代码与技术'
@@ -17,8 +18,7 @@ theme = 'blowfish'
   github = 'https://github.com/caixy-plus'
 
 [params.homepage]
-  layout = 'hero'
-  homepageImage = '/images/hero-bg.svg'
+  layout = 'blog'
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
