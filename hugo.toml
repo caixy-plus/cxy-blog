@@ -1,30 +1,95 @@
-baseURL = 'https://caixy.xin'
+baseURL = 'https://caixy.xin/'
 title = '代码随手记'
-theme = 'blowfish'
+theme = 'stack'
 defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 10
 
 [params]
   description = '随手记录代码与技术'
   mainSections = ['posts']
+  rssFullContent = true
 
-[params.article]
-  showComments = true
+  [params.footer]
+    since = 2026
+    # 备案信息(HTML,主题以 safeHTML 渲染)
+    customText = '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">闽ICP备2026017130号-1</a> | <a href="https://beian.mps.gov.cn/#/query/webSearch?code=35010302000967" target="_blank" rel="noreferrer">闽公网安备35010302000967号</a>'
 
-[params.author]
-  name = 'VC'
-  headline = 'Flutter / Spring Boot / AI 工具链'
+  [params.dateFormat]
+    published = '2006-01-02'
+    lastUpdated = '2006-01-02'
 
-[[params.author.links]]
-  github = 'https://github.com/caixy-plus'
+  [params.sidebar]
+    emoji = '📝'
+    subtitle = '随手记录代码与技术 · Flutter / Spring Boot / AI 工具链'
 
-[params.homepage]
-  layout = 'blog'
-  showRecent = true
-  showRecentItems = 6
-  showMoreLink = true
-  showMoreLinkDest = '/posts'
-  cardView = true
+  [params.article]
+    toc = true
+    readingTime = true
+    [params.article.list]
+      showTags = true
+
+  [params.colorScheme]
+    toggle = true
+    default = 'auto'
+
+  [params.widgets]
+    homepage = [
+      { type = 'search' },
+      { type = 'archives', params = { limit = 8 } },
+    ]
+    page = [{ type = 'toc' }]
+
+  [params.comments]
+    enabled = true
+    provider = 'giscus'
+    [params.comments.giscus]
+      repo = 'caixy-plus/cxy-blog'
+      repoID = 'R_kgDOScAwvA'
+      category = 'Announcements'
+      categoryID = 'DIC_kwDOScAwvM4C-iYk'
+      mapping = 'pathname'
+      lightTheme = 'light'
+      darkTheme = 'dark_dimmed'
+      reactionsEnabled = 1
+      emitMetadata = 0
+      inputPosition = 'bottom'
+      lang = 'zh-CN'
+      loading = 'lazy'
 
 [taxonomies]
   tag = 'tags'
   category = 'categories'
+
+[[menu.main]]
+  identifier = 'home'
+  name = '首页'
+  url = '/'
+  weight = -100
+  [menu.main.params]
+    icon = 'home'
+
+[[menu.main]]
+  identifier = 'archives'
+  name = '归档'
+  url = '/archives/'
+  weight = -90
+  [menu.main.params]
+    icon = 'archives'
+
+[[menu.main]]
+  identifier = 'search'
+  name = '搜索'
+  url = '/search/'
+  weight = -80
+  [menu.main.params]
+    icon = 'search'
+
+[[menu.social]]
+  identifier = 'github'
+  name = 'GitHub'
+  url = 'https://github.com/caixy-plus'
+  [menu.social.params]
+    icon = 'brand-github'
