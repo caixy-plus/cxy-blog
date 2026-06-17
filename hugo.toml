@@ -28,6 +28,7 @@ hasCJKLanguage = true
   [params.article]
     toc = true
     readingTime = true
+    views = true
     [params.article.list]
       showTags = true
 
