@@ -1,33 +1,25 @@
 {{- if and .IsPage (eq .Section "posts") (ne .Params.views false) (.Site.Params.article.views | default true) -}}
 <script>
     (function () {
-        var viewNode = document.getElementById('busuanzi_value_page_pv');
+        var viewNode = document.getElementById('pageview_value');
         if (!viewNode) return;
 
-        var initialText = viewNode.textContent;
-        var sources = [
-            'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
-            'https://busuanzi.icodeq.com/busuanzi.pure.mini.js'
-        ];
-        var sourceIndex = 0;
+        var path = viewNode.getAttribute('data-path') || window.location.pathname;
+        var normalizedPath = path.replace(/\/index\.html$/, '/');
+        if (normalizedPath.charAt(0) !== '/') normalizedPath = '/' + normalizedPath;
 
-        function hasLoaded() {
-            var text = (viewNode.textContent || '').trim();
-            return text && text !== initialText && text !== '0';
-        }
-
-        function loadNext() {
-            if (hasLoaded() || sourceIndex >= sources.length) return;
-
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = sources[sourceIndex++];
-            script.onerror = loadNext;
-            document.head.appendChild(script);
-        }
-
-        loadNext();
-        window.setTimeout(loadNext, 5000);
+        fetch('/pageviews.json', { cache: 'no-store' })
+            .then(function (response) {
+                if (!response.ok) throw new Error('pageviews unavailable');
+                return response.json();
+            })
+            .then(function (data) {
+                var views = data.pages && data.pages[normalizedPath];
+                viewNode.textContent = typeof views === 'number' ? views : 0;
+            })
+            .catch(function () {
+                viewNode.textContent = '--';
+            });
     })();
 </script>
 {{- end -}}

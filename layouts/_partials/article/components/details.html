@@ -56,7 +56,7 @@
                 {{ if $showViews }}
                     {{ partial "helper/icon" "eye" }}
                     <span class="article-time--views" title="阅读量">
-                        <span id="busuanzi_value_page_pv">...</span> 次阅读
+                        <span id="pageview_value" data-path="{{ $Page.RelPermalink }}">...</span> 次阅读
                     </span>
                 {{ end }}
             </div>
