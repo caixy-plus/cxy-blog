@@ -1,3 +1,33 @@
 {{- if and .IsPage (eq .Section "posts") (ne .Params.views false) (.Site.Params.article.views | default true) -}}
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+    (function () {
+        var viewNode = document.getElementById('busuanzi_value_page_pv');
+        if (!viewNode) return;
+
+        var initialText = viewNode.textContent;
+        var sources = [
+            'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
+            'https://busuanzi.icodeq.com/busuanzi.pure.mini.js'
+        ];
+        var sourceIndex = 0;
+
+        function hasLoaded() {
+            var text = (viewNode.textContent || '').trim();
+            return text && text !== initialText && text !== '0';
+        }
+
+        function loadNext() {
+            if (hasLoaded() || sourceIndex >= sources.length) return;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = sources[sourceIndex++];
+            script.onerror = loadNext;
+            document.head.appendChild(script);
+        }
+
+        loadNext();
+        window.setTimeout(loadNext, 5000);
+    })();
+</script>
 {{- end -}}
