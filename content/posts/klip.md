@@ -9,7 +9,7 @@ description: "隐私优先的 macOS 菜单栏剪贴板历史管理器：完全�
 
 Klip 是一款 macOS 菜单栏剪贴板历史管理器。和之前写的开源小工具不同，这是我的第一个**闭源商业产品**，已经在 Mac App Store 上架。
 
-![Klip 图标](/images/klip-icon.png)
+![Klip 历史面板](/images/klip-screenshot-1.png)
 
 ## 为什么自己做
 
@@ -25,12 +25,16 @@ Klip 是一款 macOS 菜单栏剪贴板历史管理器。和之前写的开源�
 - **固定与保留策略** - 固定条目永不清理；历史按条数或天数自动清理
 - **中文 / English 本地化**
 
+![Klip 快速搜索](/images/klip-screenshot-2.png)
+
 ## 隐私是核心卖点，不是附加说明
 
 - **完全离线**：没有任何网络库，不发起任何网络请求
 - **零权限**：不申请辅助功能、无障碍等任何系统权限
 - **本地加密**：数据库使用 SQLCipher 加密，密钥存 Keychain
 - **无第三方 SDK**：没有统计、没有崩溃上报、没有追踪
+
+![Klip 首次启动](/images/klip-screenshot-3.png)
 
 ## 零权限的代价：复制模式粘贴
 
