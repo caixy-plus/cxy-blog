@@ -21,3 +21,4 @@ description: "一个关于画家、画板与一支笔的小故事"
 
 重新起飞，一定可以。
 
+![海滨亲子骑行 · 快乐出发！](/images/painter-pelican.svg)
