@@ -1,6 +1,6 @@
 ---
 title: "SuperAsync - 通用异步任务调度平台"
-date: 2026-05-13
+date: 2026-05-13T12:54:00+08:00
 draft: false
 description: "高吞吐、低延迟、可水平扩展的分布式任务调度与执行框架，基于 PostgreSQL + Spring Boot"
 categories: ["技术"]

@@ -1,6 +1,6 @@
 ---
 title: "cc-gateway - 多平台远程驱动智能体 CLI 的网关"
-date: 2026-05-16
+date: 2026-05-16T12:00:00+08:00
 lastmod: 2026-06-05
 draft: false
 description: "用飞书/Telegram/QQ/WebUI 远程驱动本地多种智能体 CLI（Claude Code、Cursor、Pi、OpenCode）的 Rust 网关工具"

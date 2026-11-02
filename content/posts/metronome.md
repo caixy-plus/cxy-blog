@@ -1,6 +1,6 @@
 ---
 title: "Extreme Metronome - 极致全平台节拍器"
-date: 2026-05-13
+date: 2026-05-13T12:54:00+08:00
 draft: false
 description: "微秒级精度节拍器，一套代码覆盖 iOS/Android/macOS/Windows/Web 五端，零漂移计时"
 categories: ["技术"]

@@ -1,6 +1,6 @@
 ---
 title: "iKindle - 电子书阅读平台"
-date: 2026-05-13
+date: 2026-05-13T12:54:00+08:00
 draft: false
 description: "全栈电子书阅读平台，支持多端阅读、书架管理、订单支付与数据同步"
 categories: ["技术"]

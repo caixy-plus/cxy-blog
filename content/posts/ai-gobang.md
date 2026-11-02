@@ -1,6 +1,6 @@
 ---
 title: "AI 指导棋 (ai-gobang)"
-date: 2026-05-13
+date: 2026-05-13T12:54:00+08:00
 draft: false
 description: "面向围棋爱好者的智能教学应用，集成 KataGo AI 引擎与大模型自然语言教学"
 categories: ["技术"]
