@@ -1,0 +1,20 @@
+{{- /* 分类/标签详情页:沿用首页的卡片样式,顶部显示分类筛选栏 */ -}}
+{{ define "main" }}
+    {{- if eq .Data.Plural "categories" -}}
+        {{- partial "category-filter.html" . -}}
+    {{- end -}}
+    {{- $paginator := partial "helper/paginator.html" . -}}
+
+    <section class="article-list">
+        {{ range $paginator.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{ partialCached "footer/footer" . }}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

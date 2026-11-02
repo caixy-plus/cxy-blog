@@ -3,6 +3,7 @@ title: "PortProcess - 跨平台端口管理工具"
 date: 2026-05-13
 draft: false
 description: "基于 Flutter 构建的跨平台端口管理工具，支持 macOS、Windows 和 Linux"
+categories: ["技术"]
 ---
 
 **项目地址**: [https://github.com/caixy-plus/PortProcess](https://github.com/caixy-plus/PortProcess)

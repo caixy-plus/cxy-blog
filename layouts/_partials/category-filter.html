@@ -1,0 +1,13 @@
+{{- /* 首页/分类页顶部的分类筛选栏:全部 / 日常 / 技术 */ -}}
+{{- $current := "" -}}
+{{- if eq .Kind "term" -}}{{- $current = .Title -}}{{- end -}}
+<nav class="category-filter" aria-label="文章分类">
+    <a href="{{ "/" | relLangURL }}" class="category-filter__item{{ if .IsHome }} is-active{{ end }}">全部</a>
+    {{- range $name := slice "日常" "技术" -}}
+        {{- range site.Taxonomies.categories -}}
+            {{- if eq .Page.Title $name -}}
+            <a href="{{ .Page.RelPermalink }}" class="category-filter__item{{ if eq $current $name }} is-active{{ end }}">{{ $name }}<span class="category-filter__count">{{ .Count }}</span></a>
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+</nav>

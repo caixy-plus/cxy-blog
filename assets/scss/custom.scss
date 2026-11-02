@@ -18,3 +18,60 @@ body {
     z-index: -1;          // 内容之下
     pointer-events: none; // 不拦截点击/选择
 }
+
+/* 首页分类筛选栏:全部 / 日常 / 技术 */
+.category-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 18px;
+        border-radius: 999px;
+        background: var(--card-background);
+        box-shadow: var(--shadow-l1);
+        color: var(--card-text-color-main);
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: box-shadow .2s ease, background .2s ease, color .2s ease;
+
+        &:hover {
+            box-shadow: var(--shadow-l2);
+        }
+
+        &.is-active {
+            background: var(--accent-color);
+            color: var(--accent-color-text);
+        }
+    }
+
+    &__count {
+        font-size: 1.2rem;
+        opacity: .6;
+    }
+}
+
+/* 文章分类标签:和日期同一行,靠右,缩小 */
+.article-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article-meta .article-category--meta {
+    display: inline-flex;
+    gap: 6px;
+    margin: 0 0 0 auto;
+
+    a {
+        padding: 2px 8px;
+        font-size: 1.15rem;
+        line-height: 1.6;
+        border-radius: 4px;
+        text-transform: none;
+    }
+}

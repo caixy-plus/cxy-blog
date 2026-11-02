@@ -39,6 +39,7 @@ hasCJKLanguage = true
   [params.widgets]
     homepage = [
       { type = 'search' },
+      { type = 'categories', params = { limit = 10 } },
       { type = 'archives', params = { limit = 8 } },
     ]
     page = [{ type = 'toc' }]

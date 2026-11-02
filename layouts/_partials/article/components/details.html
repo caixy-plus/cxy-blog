@@ -1,18 +1,6 @@
 {{- $IsList := .IsList -}}
 {{- $Page := .Page -}}
 <div class="article-details">
-    {{ if $Page.Params.categories }}
-    <header class="article-category">
-        {{ range ($Page.GetTerms "categories") }}
-            {{ $color := partial "helper/color-from-str" .LinkTitle }}
-            {{ $BackgroundColor := default $color.BackgroundColor .Params.style.background }}
-            {{ $TextColor := default $color.TextColor .Params.style.color }}
-            <a href="{{ .RelPermalink }}" style="background-color: {{ $BackgroundColor | safeCSS }}; color: {{ $TextColor | safeCSS }};">
-                {{ .LinkTitle }}
-            </a>
-        {{ end }}
-    </header>
-    {{ end }}
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
@@ -35,7 +23,7 @@
     {{ $showTranslations := $Page.IsTranslated }}
     {{ $showTags := and $Page.Site.Params.Article.List.ShowTags ($Page.GetTerms "tags") $IsList }}
     
-    {{ if or $showTime $showTranslations $showTags }}
+    {{ if or $showTime $showTranslations $showTags $Page.Params.categories }}
     <footer class="article-meta">
         {{ if $showTime }}
             <div class="inline-meta">
@@ -60,6 +48,19 @@
                     </span>
                 {{ end }}
             </div>
+        {{ end }}
+
+        {{ if $Page.Params.categories }}
+        <div class="article-category article-category--meta">
+            {{ range ($Page.GetTerms "categories") }}
+                {{ $color := partial "helper/color-from-str" .LinkTitle }}
+                {{ $BackgroundColor := default $color.BackgroundColor .Params.style.background }}
+                {{ $TextColor := default $color.TextColor .Params.style.color }}
+                <a href="{{ .RelPermalink }}" style="background-color: {{ $BackgroundColor | safeCSS }}; color: {{ $TextColor | safeCSS }};">
+                    {{ .LinkTitle }}
+                </a>
+            {{ end }}
+        </div>
         {{ end }}
 
         {{ if $showTranslations }}

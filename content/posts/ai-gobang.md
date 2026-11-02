@@ -3,6 +3,7 @@ title: "AI 指导棋 (ai-gobang)"
 date: 2026-05-13
 draft: false
 description: "面向围棋爱好者的智能教学应用，集成 KataGo AI 引擎与大模型自然语言教学"
+categories: ["技术"]
 ---
 
 **项目地址**: [https://github.com/caixy-plus/ai-gobang](https://github.com/caixy-plus/ai-gobang)

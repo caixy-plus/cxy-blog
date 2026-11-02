@@ -3,6 +3,7 @@ title: "Brain Think (头脑风暴)"
 date: 2026-05-13
 draft: false
 description: "基于 OAuth + 脑池 AI API 的端到端验证应用，包含 Spring Boot 服务端和 Flutter 客户端"
+categories: ["技术"]
 ---
 
 **项目地址**: [https://github.com/caixy-plus/brain-think](https://github.com/caixy-plus/brain-think)

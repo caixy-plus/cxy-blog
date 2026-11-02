@@ -3,6 +3,7 @@ title: "Klip - macOS 剪贴板历史管理器，已上架 App Store"
 date: 2026-07-24
 draft: false
 description: "隐私优先的 macOS 菜单栏剪贴板历史管理器：完全离线、零权限，已上架 Mac App Store"
+categories: ["技术"]
 ---
 
 **App Store**: [Klip - 剪贴板历史](https://apps.apple.com/cn/app/klip-%E5%89%AA%E8%B4%B4%E6%9D%BF%E5%8E%86%E5%8F%B2/id6788219271)（macOS 14.0+，免费下载）

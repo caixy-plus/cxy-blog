@@ -4,6 +4,7 @@ date: 2026-05-16
 lastmod: 2026-06-05
 draft: false
 description: "用飞书/Telegram/QQ/WebUI 远程驱动本地多种智能体 CLI（Claude Code、Cursor、Pi、OpenCode）的 Rust 网关工具"
+categories: ["技术"]
 ---
 
 **项目地址**: [https://github.com/caixy-plus/cc-gateway](https://github.com/caixy-plus/cc-gateway)
