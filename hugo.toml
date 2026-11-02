@@ -8,7 +8,7 @@ hasCJKLanguage = true
   pagerSize = 10
 
 [params]
-  description = '随手记录代码与技术'
+  description = '随手记录日常与技术'
   mainSections = ['posts']
   rssFullContent = true
 
@@ -23,7 +23,7 @@ hasCJKLanguage = true
 
   [params.sidebar]
     emoji = '📝'
-    subtitle = '随手记录代码与技术 · Flutter / Spring Boot / AI 工具链'
+    subtitle = '随手记录日常与技术'
 
   [params.article]
     toc = true
