@@ -1,6 +1,6 @@
 ---
 title: "气球"
-date: 2026-10-31
+date: 2026-11-02
 draft: false
 description: "一个关于干瘪气球与仙人掌的小故事"
 categories: ["日常"]

@@ -3,6 +3,7 @@ title = '代码随手记'
 theme = 'stack'
 defaultContentLanguage = 'zh-cn'
 hasCJKLanguage = true
+timeZone = 'Asia/Shanghai'
 
 [pagination]
   pagerSize = 10
