@@ -1,6 +1,6 @@
 ---
 title: "画家"
-date: 2026-10-29T09:30:00+08:00
+date: 2026-10-29T20:00:00+08:00
 draft: false
 description: "一个关于画家、画板与一支笔的小故事"
 categories: ["日常"]
